@@ -18,7 +18,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -49,6 +49,7 @@ table {
 
 * {
     box-sizing: border-box;
+    /* border:1px solid grey; */
 }
 
 html, body {
@@ -71,12 +72,40 @@ p {
     margin: 0 auto;
 }
 
+header {
+    width:100%;
+    display:flex;
+    padding:3% 0;
+}
+
+header nav {
+    width:80%;
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-end;
+    padding:0 5%;
+}
+
+header nav a {
+    text-decoration: none;
+    color:black;
+}
+
+.background-img{
+    background-image: url('/img/jumbo.jpg');
+    height:17vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:top center;
+    width:100%;
+}
+
 .top-content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
+    padding-top: 3%;
 }
 
 .top-content .text-container {
@@ -112,6 +141,46 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes #color1{
+    background: teal;
+}
+
+.middle-content .boxes #color2{
+    background: gold;
+}
+
+.middle-content .boxes #color3{
+    background: cadetblue;
+}
+
+.middle-content .boxes #color4{
+    background: coral;
+}
+
+.middle-content .boxes #color5{
+    background: crimson;
+}
+
+.middle-content .boxes #color6{
+    background: forestgreen;
+}
+
+.middle-content .boxes #color7{
+    background: darkorchid;
+}
+
+.middle-content .boxes #color8{
+    background: hotpink;
+}
+
+.middle-content .boxes #color9{
+    background: indigo;
+}
+
+.middle-content .boxes #color10{
+    background: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +212,59 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* About page */
+
+.about-background {
+    background-image: url('/img/jumbo-about.png');
+    height:17vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:top center;
+    width:100%;
+}
+
+.top-about {
+    padding:2.5%;
+    border-bottom: 1px dashed black;
+}
+
+.main-about{
+    width:100%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+}
+
+.main-about .about-box {
+    width:47%;
+    border-bottom: 1px dashed black;
+    padding: 4% 1%;
+}
+
+.main-about .about-box p {
+    padding-bottom: 6%;
+}
+
+.main-about .about-box h2 {
+    padding-top:2%;
+}
+
+.main-about .about-box a {
+    padding:1.5% 5.5%;
+    border:2px black solid;
+    text-decoration: none;
+    border-radius: 7px;
+    color:black;
+    transition:.5s;
+}
+
+.main-about .about-box a:hover {
+    color:white;
+    background-color: black;
+}
+
+.bottom-about {
+    padding:6% 2.5%;
 }
